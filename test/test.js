@@ -6,6 +6,7 @@ function checkArray(array)
 {
     let maxError = 0;
     let avgError = 0;
+    let minError = 1e10;
 
     for (let indValue = 0; indValue < array.length; indValue++)
     {
@@ -26,10 +27,18 @@ function checkArray(array)
         {
             maxError = diffNorm;
         }
+        if (diffNorm < minError)
+        {
+            minError = diffNorm;
+        }
+
+
+        console.log(JT + " " + diffNorm);
+
     }
     avgError /= horizon_array_hourly_2020.length;
 
-    return {avgError : avgError, maxError : maxError};
+    return {avgError : avgError, maxError : maxError, minError : minError};
 }
 
 describe('Elp2000-82b', function() {
