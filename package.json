@@ -1,0 +1,29 @@
+{
+  "name": "ELP2000-82B",
+  "version": "1.0.0",
+  "description": "Self-contained implementation of ELP2000-82B",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive --timeout 60000 --require @babel/register",
+    "build": "webpack",
+    "elp2000": "cd data && node download_elp2000.js && node create_json_elp2000.js 0.001 0.001 > ELP2000-82b.json & cd .."
+  },
+  "keywords": [],
+  "author": "Ville Räisänen",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "@babel/core": "^7.18.0",
+    "@babel/register": "^7.17.7",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "jsdoc": "^3.6.10",
+    "mocha": "^10.0.0"
+  }
+}
