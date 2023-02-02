@@ -1,7 +1,7 @@
 import { elp2000SphericalOfDate, elp2000CartesianOfDate, elp2000CartesianJ2000 } from '../src/Elp2000-82b.js';
 import { horizon_array_hourly_2020 } from '../data/horizons_results_hourly_2020.js';
 import { horizon_array_monthly_1900_2100 } from '../data/horizons_results_monthly_1900-2100.js';
-
+import { elp2000ref_array_monthly_1900_2100 } from '../data/elp2000ref_results_monthly_1900-2100.js';
 function checkArray(array)
 {
     let maxError = 0;
@@ -33,7 +33,7 @@ function checkArray(array)
         }
 
 
-        console.log(JT + " " + diffNorm);
+        //console.log(JT + " " + diffNorm);
 
     }
     avgError /= horizon_array_hourly_2020.length;
@@ -55,5 +55,8 @@ describe('Elp2000-82b', function() {
             console.log(checkArray(horizon_array_monthly_1900_2100));
         });
 
+        it('ELP2000-82b Reference Implementation 1900-2100 monthly', function() {
+            console.log(checkArray(elp2000ref_array_monthly_1900_2100));
+        });
     });
 });
