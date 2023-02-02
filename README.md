@@ -8,6 +8,7 @@ The code computes the coordinates of the Moon in the geocentric ecliptic frame o
 4. Chapront-Touz ́e, M.: 1983, Perturbations due to the shape of the Moon in the lunar theory ELP 2000, Astron. Astrophys., 119, 256
 5. Chapront-Touz ́e, M., Chapront J.: 1983, The lunar Ephemeris ELP 2000, Astron. Astrophys., 124, 50
 6. Chapront-Touz ́e, M., Chapront J.: 1988, ELP 2000-85: a semi-analytical lunar ephemeris adequate for historial times, Astron. Astrophys., 190, 342
+7. J. Chapront, M. Chapront-Touze, G.Francou: 2002, A new determination of lunar orbital parameters, precession constant and tidal acceleration from LLR measurements Astronomy Astrophysics.
 
 The code has been also integrated into the larger library [orbits.js](https://github.com/vsr83/orbits.js).
 
@@ -38,8 +39,9 @@ The dist folder contains two versions of the library:
 
 The accuracy of the data has been tested by comparison to [JPL Horizons](https://ssd.jpl.nasa.gov/horizons/app.html#/) and the original reference implementation available at [http://cdsarc.u-strasbg.fr/viz-bin/ftp-index?/ftp/pub/ftp/ftp/ftp/catv/6/79/example.f](http://cdsarc.u-strasbg.fr/viz-bin/ftp-index?/ftp/pub/ftp/ftp/ftp/catv/6/79/example.f). The comparisons are performed by the test script [test/test.js](test/test.js). 
 
-Without truncation, the average error w.r.t. the reference implementation has been evaluated by computation of the coordinates of the Moon at the start of each month in the range 1900-2100. The maximum and average errors are 12.5 cm and 3.05 cm, respectively. With the default truncation of 0.001, the maximum and average errors are 136.6 m and 9.23 m, respectively.
+Without truncation, the coordinates from the reference implementation were evaluated by computation of the coordinates of the Moon at the start of each month in the range 1900-2100. Before the corrections from [7] were applied, the maximum and average errors are 12.5 cm and 3.05 cm, respectively. With the default truncation of 0.001, the maximum and average errors were 136.6 m and 9.23 m, respectively.
 
 The comparison has been repeated w.r.t. data from JPL Horizons with the results depicted below:
 ![Error w.r.t. JPL Horizons 1900-2100](error_JPL_Horizons.png)
-In addition, a separate comparison has been performed by computation of the coordinates at the start of each hour in 2020. The observed error varies between 433 and 482 meters.
+![Error w.r.t. JPL Horizons 1900-2100](error_JPL_Horizons_truncated.png)
+In addition, a separate comparison has been performed by computation of the coordinates at the start of each hour in 2020. The observed error varies between 70 and 128 meters.
