@@ -1,5 +1,5 @@
 # ELP2000-82B
-Self-contained JavaScript implementation of ELP2000-82B
+A self-contained JavaScript implementation of the lunar solution ELP2000-82B developed by Jean Chapront, Michelle Chapront-Touzé, and others at the Bureau des Longitudes, France.
 
 The code computes the coordinates of the Moon in the geocentric ecliptic frame of mean ecliptic and equinox of J2000 as described in document [elp82b.pdf](elp82b.pdf) and the related publications:
 1. Chapront J., Chapront-Touz ́e, M.: 1982, Planetary perturbations of the Moon in ELP-2000. Proceeding of the Conference on Analytical Methods and Ephemerides (Namur, Belgium), Celes. Mech., 26, 83
