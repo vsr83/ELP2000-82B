@@ -1,7 +1,7 @@
 # ELP2000-82B
 Self-contained JavaScript implementation of ELP2000-82B
 
-The code computes the coordinates of the Moon in the geocentric ecliptic frame of mean ecliptic and equinox of J2000 as described in document [elp82b.ps.gz](http://cdsarc.u-strasbg.fr/viz-bin/ftp-index?/ftp/pub/ftp/ftp/ftp/catv/6/79/elp82b.ps.gz) and the related publications:
+The code computes the coordinates of the Moon in the geocentric ecliptic frame of mean ecliptic and equinox of J2000 as described in document [elp82b.pdf](elp82b.pdf) and the related publications:
 1. Chapront J., Chapront-Touz ́e, M.: 1982, Planetary perturbations of the Moon in ELP-2000. Proceeding of the Conference on Analytical Methods and Ephemerides (Namur, Belgium), Celes. Mech., 26, 83
 2. Chapront-Touz ́e, M.: 1982, The ELP solution of the main problem of the Moon and some applications. Proceeding of the Conference on Analytical Methods and Ephemerides (Namur, Belgium), Celes. Mech., 26, 63
 3. Chapront J., Chapront-Touz ́e, M.: 1982, Comparison of ELP 2000-82 to a JPL numerical integration, in High precision Earth rotation and Earth-Moon dynamics, O. Calame ed., D. Reidel Publ. Co., p.257
