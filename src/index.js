@@ -1,0 +1,2 @@
+import { elp2000SphericalOfDate, elp2000CartesianOfDate, elp2000CartesianJ2000, elp2000Data } from './Elp2000-82b.js';
+export { elp2000SphericalOfDate, elp2000CartesianOfDate, elp2000CartesianJ2000, elp2000Data };
