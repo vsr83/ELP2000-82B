@@ -1,6 +1,6 @@
 import { elp2000SphericalOfDate, elp2000CartesianOfDate, elp2000CartesianJ2000 } from '../src/Elp2000-82b.js';
-import { horizon_array_hourly_2020 } from './horizons_results_hourly_2020.js';
-import { horizon_array_monthly_1900_2100 } from './horizons_results_monthly_1900-2100.js';
+import { horizon_array_hourly_2020 } from '../data/horizons_results_hourly_2020.js';
+import { horizon_array_monthly_1900_2100 } from '../data/horizons_results_monthly_1900-2100.js';
 
 function checkArray(array)
 {
