@@ -1,5 +1,5 @@
 {
-  "name": "ELP2000-82B",
+  "name": "elp2000_82b",
   "version": "1.0.0",
   "description": "Self-contained implementation of ELP2000-82B",
   "main": "index.js",

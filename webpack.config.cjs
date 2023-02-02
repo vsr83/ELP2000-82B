@@ -7,7 +7,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'elp2000-82b.js',
     library: {
-        name: "ELP2000-82B",
+        name: "elp2000_82b",
         type: "umd",
     },
   },
